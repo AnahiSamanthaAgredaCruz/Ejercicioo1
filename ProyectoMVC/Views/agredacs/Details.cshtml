@@ -1,0 +1,50 @@
+﻿@model ProyectoMVC.Models.agredac
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>agredac</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Friendofagreda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Friendofagreda)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Place_lista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Place_lista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthday)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthday)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.agredaID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
